@@ -1,0 +1,53 @@
+personas = ["Monica", "Natalia", "Angeles", "Valentina", "Camila", "Rosa"] 
+
+temperaturafebrero = ["29°", "27°", "30°", "29°", "32°", "34°", "36°", "34°", "36°","38°",
+ "38°", "39°", "30°", "33°", "32°", "27°", "16°","23°", "26°", "29°", "31°", "33°", "31°",
+"32°", "34°", "28°", "31°", "37°"]
+
+ciudades = ["Santa Maria de Punilla", "Buenos Aires Capital", "San Marcos Sierras", "Capilla del Monte"]
+
+fechas = ["nacimiento 03/01/2000", "cumpleaños madre 09/07"]
+
+#1 orden alfabetico
+
+personas.sort()
+
+#2 orden ascendente
+
+temperaturafebrero.sort()
+
+#3 temperatura marzo 15 primeros dias
+
+temperaturafebrero.append("38°") 
+temperaturafebrero.append("38°") 
+temperaturafebrero.append("36°") 
+temperaturafebrero.append("34°") 
+temperaturafebrero.append("33°")
+temperaturafebrero.append("34°") 
+temperaturafebrero.append("34°") 
+temperaturafebrero.append("33°") 
+temperaturafebrero.append("34°")
+temperaturafebrero.append("38°")
+temperaturafebrero.append("39°") 
+temperaturafebrero.append("37°") 
+temperaturafebrero.append("36°") 
+temperaturafebrero.append("37°") 
+temperaturafebrero.append("29°") 
+
+#4 quitar de la lista personas a mis abuelos
+
+personas.remove("Rosa")
+
+#5 quitar de la lista la ciudad menos linda que visite
+
+ciudades.remove("Buenos Aires Capital")
+
+#6 mostrar todas las listas
+
+print(personas)
+
+print(temperaturafebrero)
+
+print(ciudades)
+
+print(fechas)
