@@ -10,6 +10,16 @@ Familiares[32411233] = "Carla"
 
 print(Familiares)
 
-Numeros = {"Ramiro": 3513318283, "Martin": 3516530277, "Lautaro": 3516577109, "Sofia": 3516644604}
+import random
 
-print(Numeros)
+nombres = ["Ramiro", "Martin", "Lautaro", "Sofia"]
+telefonos = {}
+
+for nombre in nombres:
+    numero_telefono = "".join([str(random.randint(0, 9))for _ in range(9)])
+    telefonos[nombre] = numero_telefono 
+    
+print("Diccionario de Teléfonos:")
+for nombre, telefonos in telefonos.items():
+    print(f"Nombre: {nombre} - Teléfono: {telefonos}")
+    
